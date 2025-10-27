@@ -1,0 +1,22 @@
+-- data Formula : Set₁ where
+--   atom : Atom → Formula
+--   neg-atom : Atom → Formula
+--   exists : ∀ {I : Set} → countable I → (I → Formula) → Formula
+--   foral : ∀ {I : Set} → countable I → (I → Formula) → Formula
+
+-- neg : Formula → Formula
+-- neg (atom a) = neg-atom a
+-- neg (neg-atom a) = atom a
+-- neg (exists c A) = foral c (λ x → neg (A x))
+-- neg (foral c A) = exists c (λ x → neg (A x))
+
+-- data true : Formula → Set₁ where
+--   atom-true : {a : Atom} → Atom-true a → true (atom a)
+
+--   neg-atom-true : {a : Atom} → ¬ (Atom-true a) → true (neg-atom a)
+
+--   exists-true : {I : Set} (c : countable I) (A : I → Formula)
+--               → Σ I (λ x → true (A x)) → true (exists c A)
+
+--   forall-true : {I : Set} (c : countable I) (A : I → Formula)
+--               → (∀ (x : I) → true (A x)) → true (foral c A)

@@ -1,0 +1,4 @@
+(executable
+ (public_name yac)
+ (name main)
+ (libraries yac))
