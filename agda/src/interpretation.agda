@@ -39,6 +39,8 @@ something (exists-intro t e Π) (cons σ Σ f g) = {!!}
 -- traverse (leaf c) f = c
 -- traverse (branch a b) f = traverse (b (f a)) f
 
+data 
+
 
 -- test : Formula → Tree Set (λ I → {n : ℕ} → Fin n → I) Atom
 -- test (atom x) = leaf x
@@ -54,3 +56,5 @@ something (exists-intro t e Π) (cons σ Σ f g) = {!!}
 
 
 module DependentTree where
+
+  traverse
