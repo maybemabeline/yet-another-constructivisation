@@ -1,8 +1,7 @@
-open Infinitary.Formula
-open Infinitary.Deduction
-open Infinitary.Print
-open Infinitary.Dickson
-open Infinitary.Properties
+open Yac.Formula
+open Yac.Print
+open Yac.Dickson
+open Yac.Properties
 
 
 (* let test = ExistsI (of_int 2, "m", Exists ("n", Atom (Leq (Var "m", Var "n"))), *)
